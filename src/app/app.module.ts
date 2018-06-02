@@ -10,6 +10,10 @@ import { TabsPage } from '../pages/tabs/tabs';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+import { NewsProvider } from '../providers/news/news';
+import { HTTP } from '@ionic-native/http';
+// import { HTTP } from "@ionic-native/http";
+
 
 @NgModule({
   declarations: [
@@ -33,8 +37,10 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   ],
   providers: [
     StatusBar,
+    HTTP,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    NewsProvider
   ]
 })
 export class AppModule {}
