@@ -12,6 +12,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { NewsProvider } from '../providers/news/news';
 import { HTTP } from '@ionic-native/http';
+import { ApiProvider } from '../providers/api/api';
 // import { HTTP } from "@ionic-native/http";
 
 
@@ -40,7 +41,8 @@ import { HTTP } from '@ionic-native/http';
     HTTP,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    NewsProvider
+    NewsProvider,
+    ApiProvider
   ]
 })
 export class AppModule {}

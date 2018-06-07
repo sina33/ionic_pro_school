@@ -6,6 +6,8 @@
 
 <ion-content padding>
   <h2>Welcome to Ionic!</h2>
-  <button ion-button (click)="getData">GET</button>
-  <button ion-button (ngModel)="message"></button>
+  <button ion-button (click)="getData()">GET</button>
+  <ion-list>
+    <button ion-item>{{message}}</button>
+  </ion-list>
 </ion-content>
