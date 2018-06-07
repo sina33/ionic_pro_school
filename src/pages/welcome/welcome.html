@@ -7,12 +7,21 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>welcome</ion-title>
+    <!-- <ion-title>welcome</ion-title> -->
+    <img src="assets/imgs/welcome/poster.png"/>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+  <button ion-button round (click)="mainPage()">دوره دوم</button>
+  <button ion-button round [disabled]="true">دوره اول</button>
 </ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+      <!-- لاحول ولاقوه الا بالله -->
+    <ion-title>به اپلیکیشن دبیرستان محبان خوش آمدید</ion-title>
+  </ion-toolbar>
+</ion-footer>
