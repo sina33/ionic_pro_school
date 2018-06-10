@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { SigninPage } from "../signin/signin";
+import { SignupPage } from "../signup/signup";
 
 import { TabsPage } from "../../pages/tabs/tabs";
 
@@ -26,6 +28,14 @@ export class WelcomePage {
 
   mainPage() {
     this.navCtrl.setRoot(TabsPage, {})
+  }
+
+  signin() {
+    this.navCtrl.push(SigninPage, {})
+  }
+
+  signup() {
+    this.navCtrl.push(SignupPage, {})
   }
 
 }

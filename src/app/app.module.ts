@@ -8,6 +8,8 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { WelcomePage } from "../pages/welcome/welcome";
+import { SigninPage } from "../pages/signin/signin";
+import { SignupPage } from "../pages/signup/signup";
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -24,7 +26,9 @@ import { ApiProvider } from '../providers/api/api';
     ContactPage,
     HomePage,
     TabsPage,
-    WelcomePage
+    WelcomePage,
+    SigninPage,
+    SignupPage
   ],
   imports: [
     BrowserModule,
@@ -37,7 +41,9 @@ import { ApiProvider } from '../providers/api/api';
     ContactPage,
     HomePage,
     TabsPage,
-    WelcomePage
+    WelcomePage,
+    SigninPage,
+    SignupPage
   ],
   providers: [
     StatusBar,

@@ -9,7 +9,7 @@ $font-path: "../assets/fonts";
 // The app direction is used to include
 // rtl styles in your app. For more info, please see:
 // http://ionicframework.com/docs/theming/rtl-support/
-$app-direction: multi; // Both RTL and LTR
+$app-direction: rtl; // Both RTL and LTR
 
 
 @import "ionic.globals";

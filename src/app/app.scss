@@ -22,4 +22,9 @@
     url('../assets/fonts/farsi/Vazir.woff') format('woff'),
     url('../assets/fonts/farsi/Vazir.ttf') format('truetype');
 }
+
+.header-md::after {
+    width: 0;
+
+}
     
